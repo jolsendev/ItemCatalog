@@ -1,0 +1,21 @@
+1. Mock ups
+2. Design URLs
+    READ
+    "/" home shows categories and a list of the latest items worked on.
+    "/catalog/<int:catalog_item>/items"  show a lost of items for a catagory item
+    "/catalog/<int:catalog_item>/<int:item_id>" - shows the description for a single item
+    CREATE
+    "/catalog/new" - new a category
+    "/catalog/<int:catalog_item>/new" - new category item
+    UPDATE
+    "/catalog/<int:catalog_item>/edit" - edit a category
+    "/catalog/<int:catalog_item>/<int:item_id>/edit" - edit a category
+    DELETE
+    "/catalog/<int:catalog_item>/delete" - delete a category
+    "/catalog/<int:catalog_item>/<int:item_id>/delete" - delete a category
+    LOGIN
+    "/catalog/login"
+
+3. Templates and forms
+4. CRUD functionality
+5. API Endpoints

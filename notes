@@ -1,0 +1,87 @@
+Project Overview
+-----------------
+You will develop an application that provides a list of items within a variety of categories as well as provide a user
+registration and authentication system. Registered users will have the ability to post, edit and delete their own items.
+
+Why This Project?
+Modern web applications perform a variety of functions and provide amazing features and utilities to their users; but
+deep down, it’s really all just creating, reading, updating and deleting data. In this project, you’ll combine your
+knowledge of building dynamic websites with persistent data storage to create a web application that provides a
+compelling service to your users.
+
+What Will I Learn?
+You will learn how to develop a RESTful web application using the Python framework Flask along with implementing
+third-party OAuth authentication. You will then learn when to properly use the various HTTP methods available to you
+and how these methods relate to CRUD (create, read, update and delete) operations.
+
+How Does This Help My Career?
+Efficiently interacting with data is the backbone upon which performant web applications are built
+Properly implementing authentication mechanisms and appropriately mapping HTTP methods to CRUD operations are core
+features of a properly secured web application
+
+#########################################################################
+
+
+
+https://classroom.udacity.com/nanodegrees/nd004/parts/8d3e23e1-9ab6-47eb-b4f3-d5dc7ef27bf0/modules/348776022975462/lessons/3487760229239847/concepts/36483886240923
+
+
+############################################################################
+
+How will I complete this project?
+This project is connected to the Full Stack Foundations and Authentication and Authorization courses, but depending on
+your background knowledge you may not need the entirety of both courses to complete this project. Here's what you
+should do:
+
+Install Vagrant and VirtualBox
+Clone the fullstack-nanodegree-vm
+Launch the Vagrant VM (vagrant up)
+Write your Flask application locally in the vagrant/catalog directory (which will automatically be synced to
+/vagrant/catalog within the VM).
+
+Run your application within the VM (python /vagrant/catalog/application.py)
+Access and test your application by visiting http://localhost:8000 locally
+Get started with this helpful guide.
+You can find the link to the fullstack-nanodegree-vm here.
+
+############################################################################
+
+RUBRIC
+--------------
+
+https://review.udacity.com/#!/rubrics/5/view
+
+Does the project implements a JSON endpoint with all required content?
+    The project implements a JSON endpoint that serves the same information as displayed in the HTML endpints
+    for an arbitrary item in the catalog.
+
+Does the website include a form allowing users to add new items and correctly process these forms?
+    Website includes a form allowing users top add new items and correctly process submitted forms.
+
+
+Does the website include a form to update a record in the database and correctly processes this form?
+    Website does include a form to edit/update a current record in the database table and correctly processes submitted
+    forms.
+
+Does the website include a way to delete an item from the catalog?
+    Website does include a function to delete a current record.
+
+Do create, delete, and update operations consider authorization status prior to execution?
+    Create, delete and update operations do consider authorization status prior to execution.
+
+Does the website implement a third party authentication and authorization service?
+    Page implements a third-party authentication & authorization service (like Google Accounts or Mozilla Persona)
+    instead of implementing its own authentication & authorization spec.
+
+Is there a “login” and “logout” button/link in the website?
+    Make sure there is a 'Login' and 'Logout' button/link in the project. The aesthetics of this button/link is up to
+    the discretion of the student.
+
+Is the code ready for personal review and is neatly formatted?
+    Code is ready for personal review and neatly formatted and compliant with the Python PEP 8 style guide.
+
+Are comments present and effectively explain longer code procedures?
+    Comments are present and effectively explain longer code procedures.
+
+Is there a README file included detailing all steps required to successfully run the application?
+    README file includes details of all the steps required to successfully run the application.
