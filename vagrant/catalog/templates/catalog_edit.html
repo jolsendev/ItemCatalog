@@ -1,0 +1,20 @@
+{% extends "main.html" %}
+{% block content %}
+<h1>Edit {{catalog.name}}</h1>
+<form>
+  <div class="form-group">
+    <label for="catalogName">Catalog Name</label>
+    <input type="email" class="form-control" id="catalogName" aria-describedby="emailHelp" placeholder="{{catalog.name}}">
+  </div>
+ <div class="form-group">
+    <label for="selectCategory">Category</label>
+    <select class="form-control" id="selectCategory">
+      <option>Sports</option>
+      <option>Fashion</option>
+      <option>Education</option>
+       <option selected="true">Food</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

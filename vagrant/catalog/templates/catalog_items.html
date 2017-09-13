@@ -1,0 +1,12 @@
+{% for item in catalog_items_list %}
+<div class="col-6 col-lg-4">
+    <h2>{{item.name}}</h2>
+    <p>{{item.description}}</p>
+    <div class="row">
+        <a class="btn btn-outline-info col-5" style="" href="#" role="button">Edit »</a>
+        <a class="btn btn-outline-info col-5" href="#" role="button">Delete
+            »</a>
+    </div>
+    <hr>
+</div>
+{% endfor %}

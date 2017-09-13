@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+{% block content %}
+
+    <div class="row row-offcanvas row-offcanvas-right">
+<!--SIDEBAR-->
+        {% include "sidebar.html" %}
+        <div class="col-12 col-md-9">
+
+<!--JUMBOTRON-->
+            <div class="jumbotron">
+                <h1>Hello, world!</h1>
+                <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some
+                    responsive-range viewport sizes to see it in action.</p>
+            </div>
+            <!--ITEM_CONTAINER-->
+            <div class="row">
+            {% include "catalog_items.html" %}
+
+            </div><!--/row-->
+        </div><!--/span-->
+    </div><!--/row-->
+
+    <hr>
+
+    <footer>
+        <p>© Company 2017</p>
+    </footer>
+
+
+{% endblock %}
+

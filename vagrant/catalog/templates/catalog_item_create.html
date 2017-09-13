@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<h1>Create a new catalog item</h1>
+<form href="{{ url_for('create_catalog')}}" method = "post">
+  <div class="form-group">
+    <label for="itemNameInput">Catalog Name</label>
+    <input type="input" class="form-control" id="itemNameInput" name="catalog_name" aria-describedby="emailHelp" placeholder="Enter item Name">
+  </div>
+<div class="form-group">
+    <label for="itemDescriptionInput">Catalog Description</label>
+    <input type="input" class="form-control" id="itemDescriptionInput" aria-describedby="emailHelp" name="description" placeholder="Enter item description">
+  </div>
+ <div class="form-group">
+    <label for="selectCategory">Category</label>
+    <select class="form-control" id="selectCategory">
+      <option name="selection">Sports</option>
+      <option name="selection">Fashion</option>
+      <option name="selection">Education</option>
+      <option name="selection">Business</option>
+      <option name="selection">Food</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
