@@ -2,27 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21b16622-2f1e-45fe-a151-b6ca7597c4cc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/static/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/static/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_create.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_delete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_home_items.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_create.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_delete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_description.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_items.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/readmore test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/sidebar.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vagrant/catalog/models/item_catalog_models.py" afterPath="$PROJECT_DIR$/vagrant/catalog/models/database_setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ItemCatalog.iml" afterPath="$PROJECT_DIR$/.idea/ItemCatalog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/login.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vagrant/catalog/catalog_app.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vagrant/catalog/restaurantmenuwithusers.db" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/items_catalog_app.py" afterPath="$PROJECT_DIR$/vagrant/catalog/items_catalog_app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/models/database_setup.py" afterPath="$PROJECT_DIR$/vagrant/catalog/models/database_setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/notes" afterPath="$PROJECT_DIR$/vagrant/catalog/notes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_create.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_delete.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_delete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_edit.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_home.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_home_items.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_home_items.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_create.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_delete.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_delete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_edit.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_items.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/catalog_items.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/header.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/catalog/templates/sidebar.html" afterPath="$PROJECT_DIR$/vagrant/catalog/templates/sidebar.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +34,8 @@
       <file leaf-file-name="items_catalog_app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vagrant/catalog/items_catalog_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="76" column="23" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="23" />
+            <state relative-caret-position="2975">
+              <caret line="175" column="26" lean-forward="false" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
               </folding>
@@ -46,31 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catalog_app.db" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vagrant/catalog/catalog_app.db">
+      <file leaf-file-name="catalog_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="catalog_item_create.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_create.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="106" lean-forward="false" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="106" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="catalog_create.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_create.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="38" />
+            <state relative-caret-position="238">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -79,9 +56,31 @@
       <file leaf-file-name="sidebar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/sidebar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="71" lean-forward="false" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
+            <state relative-caret-position="153">
+              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +88,38 @@
       <file leaf-file-name="catalog_delete.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_delete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="60" lean-forward="true" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+            <state relative-caret-position="68">
+              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catalog_home_items.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_home_items.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catalog_item_delete.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_delete.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -99,41 +128,9 @@
       <file leaf-file-name="catalog_home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="19" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="catalog_home_items.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_home_items.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="catalog_items.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_items.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database_setup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vagrant/catalog/models/database_setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -155,9 +152,21 @@
       <find>container</find>
       <find>link</find>
       <find>details</find>
-      <find>login</find>
       <find>toggle</find>
       <find>id=</find>
+      <find>create_catalog_item</find>
+      <find>create_catalog_id</find>
+      <find>catalog_home_</find>
+      <find>create</find>
+      <find>url_for</find>
+      <find>catalog_delete</find>
+      <find>edit</find>
+      <find>create_catalog</find>
+      <find>I got</find>
+      <find>edit_catalog_item</find>
+      <find>catalo</find>
+      <find>delete</find>
+      <find>login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,32 +177,33 @@
       <list>
         <option value="$PROJECT_DIR$/vagrant/catalog/README.txt" />
         <option value="$PROJECT_DIR$/notes" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/notes" />
         <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_description.html" />
         <option value="$PROJECT_DIR$/vagrant/catalog/static/style.css" />
         <option value="$PROJECT_DIR$/vagrant/catalog/templates/readmore test.html" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/templates/header.html" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_edit.html" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/notes" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/templates/sidebar.html" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/models/database_setup.py" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/catalog_app.db" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_create.html" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_home_items.html" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_items.html" />
         <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_delete.html" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_delete.html" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_create.html" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_edit.html" />
         <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_edit.html" />
         <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_home.html" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/templates/main.html" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_items.html" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_create.html" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/models/database_setup.py" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_create.html" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/templates/sidebar.html" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_delete.html" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/templates/header.html" />
         <option value="$PROJECT_DIR$/vagrant/catalog/items_catalog_app.py" />
-        <option value="$PROJECT_DIR$/vagrant/catalog/templates/catalog_home_items.html" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/templates/main.html" />
+        <option value="$PROJECT_DIR$/vagrant/catalog/templates/login.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="31" />
-    <option name="y" value="102" />
-    <option name="width" value="1378" />
-    <option name="height" value="780" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -213,6 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,7 +268,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,6 +286,12 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="login.html" type="OdpsQLRunnerConfigurationType" factoryName="MaxCompute SQL">
+      <odps_target_file />
+      <odps_output_dir>C:\Users\Jamie\AppData\Local\Temp\</odps_output_dir>
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -291,27 +307,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22503962" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22693998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24450952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Job" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="MaxCompute Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -362,6 +379,90 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vagrant/catalog/items_catalog_app.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="76" column="23" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/catalog_app.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="106" lean-forward="false" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="71" lean-forward="false" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="60" lean-forward="true" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_items.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/models/database_setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_home_items.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/items_catalog_app.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
@@ -391,7 +492,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -402,7 +502,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -423,7 +522,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -434,7 +532,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -455,36 +552,32 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vagrant/catalog/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -492,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -500,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -508,38 +599,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="10" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vagrant/catalog/notes">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="337">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="306">
           <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/header.html">
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/models/database_setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="124">
+          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="70" lean-forward="true" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_edit.html">
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/catalog_app.db">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state relative-caret-position="187">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="189" lean-forward="false" selection-start-line="10" selection-start-column="189" selection-end-line="10" selection-end-column="189" />
           <folding />
         </state>
       </provider>
@@ -552,119 +667,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_delete.html">
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_items.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="102">
+          <caret line="6" column="123" lean-forward="false" selection-start-line="6" selection-start-column="123" selection-end-line="6" selection-end-column="123" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="238">
+          <caret line="14" column="65" lean-forward="true" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_delete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="60" lean-forward="true" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+        <state relative-caret-position="68">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_create.html">
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="106" lean-forward="false" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="106" />
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/catalog_app.db">
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_item_delete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/models/database_setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_items.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="38" />
+        <state relative-caret-position="85">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="71" lean-forward="false" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
+        <state relative-caret-position="153">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_home_items.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vagrant/catalog/items_catalog_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="76" column="23" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="23" />
+        <state relative-caret-position="2975">
+          <caret line="175" column="26" lean-forward="false" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/catalog_home_items.html">
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        <state relative-caret-position="124">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/catalog/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

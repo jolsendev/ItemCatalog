@@ -1,31 +1,33 @@
 {% extends "main.html" %}
 {% block content %}
 
-    <div class="row row-offcanvas row-offcanvas-right">
-<!--SIDEBAR-->
-        {% include "sidebar.html" %}
-        <div class="col-12 col-md-9">
+<div class="row row-offcanvas row-offcanvas-right">
+    <!--SIDEBAR-->
+    {% include "sidebar.html" %}
+    <div class="col-12 col-md-9">
 
-<!--JUMBOTRON-->
-            <div class="jumbotron">
-                <h1>Hello, world!</h1>
-                <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some
-                    responsive-range viewport sizes to see it in action.</p>
+        <!--JUMBOTRON-->
+        <div class="jumbotron">
+            <h1>{{catalog.name}}</h1>
+            <p>{{catalog.description}}</p>
+            <div class="row col-6">
+                <a class="btn btn-outline-info col-6" style="" href="{{url_for('edit_catalog', catalog_id=catalog.id)}}" role="button">Edit »</a>
+                <a class="btn btn-outline-info col-6" href="{{url_for('delete_catalog', catalog_id=catalog.id)}}" role="button">Delete »</a>
             </div>
-            <a href="{{url_for('create_catalog_item', )}}">Create a new item</a>
-            <!--ITEM_CONTAINER-->
-            <div class="row">
+        </div>
+        <a href="{{url_for('create_catalog_item', catalog_id=catalog.id)}}">Create a new item</a>
+        <!--ITEM_CONTAINER-->
+        <div class="row">
             {% include "catalog_items.html" %}
+        </div><!--/row-->
+    </div><!--/span-->
+</div><!--/row-->
 
-            </div><!--/row-->
-        </div><!--/span-->
-    </div><!--/row-->
+<hr>
 
-    <hr>
-
-    <footer>
-        <p>© Company 2017</p>
-    </footer>
+<footer>
+    <p>© Company 2017</p>
+</footer>
 
 
 {% endblock %}

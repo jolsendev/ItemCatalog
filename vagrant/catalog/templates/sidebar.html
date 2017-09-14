@@ -4,7 +4,7 @@
             <button type="button" class="btn btn-link btn-lg btn-block active">New Catalog »</button>
         </a>
         {% for item in catalog_list %}
-        <a href="{{url_for('show_catalog_items', catalog_item = item.id)}}" class="list-group-item">{{item.name}}</a>
+        <a href="{{url_for('show_catalog_items', catalog_id=item.id)}}" class="list-group-item">{{item.name}}</a>
         {% endfor %}
     </div>
 </div>

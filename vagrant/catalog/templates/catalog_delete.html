@@ -1,6 +1,9 @@
 {% extends "main.html" %}
 {% block content %}
-<h3>Are you sure you want to delete {{ catalog.name }}?</h3>
-<button type="button" class="btn btn-primary">Yes</button>
-<button type="button" class="btn btn-primary">No</button>
+<form href="{{ url_for('delete_catalog', catalog_id=catalog.id)}}" method="POST">
+    <h3>Are you sure you want to delete {{ catalog.name }}?</h3>
+    <button type="submit" name="Yes" class="btn btn-primary">Yes</button>
+    <button type="submit" name="No" class="btn btn-primary">No</button>
+</form>
+
 {% endblock %}
