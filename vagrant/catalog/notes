@@ -23,3 +23,11 @@
         delete -
     CRUD catalog item
 5. API Endpoints
+
+6. Message flashing
+
+7. Create oauth for login
+
+8. facebook and google oauth
+
+9. update app to force login/ user rights

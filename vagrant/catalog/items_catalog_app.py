@@ -43,7 +43,7 @@ def show_catalog_items(catalog_id):
 
 
 # "/catalog/<int:catalog_id>/<int:item_id>" - shows the description for a single item
-@app.route("/catalog/<int:catalog_id>/<int:item_id>/description")
+@app.route("/catalog/<int:catalog_id>/item/<int:item_id>/description")
 def show_item_description(catalog_id, item_id):
     return "Show catalog description for %s item %s" % (catalog_id, item_id)
 
@@ -115,7 +115,7 @@ def edit_catalog(catalog_id):
 
 
 # "/catalog/<int:catalog_item>/<int:item_id>/edit" - edit a category
-@app.route("/catalog/<int:catalog_id>/<int:item_id>/edit", methods=["POST", "GET"])
+@app.route("/catalog/<int:catalog_id>/item/<int:item_id>/edit", methods=["POST", "GET"])
 def edit_catalog_item(catalog_id, item_id):
     items = session.query(CatalogItem).filter_by(id=item_id)
     item = items.filter_by(catalog_id=catalog_id).one()
@@ -186,6 +186,22 @@ def fb_login():
 @app.route("/catalog/gconnect")
 def g_login():
     return "gconnect"
+
+@app.route('/catalog/<int:catalog_id>/JSON')
+def catalog_items_json(catalog_id):
+    catalogItems = session.query(CatalogItem).filter_by(catalog_id=catalog_id).all()
+    return jsonify(MenuItems=[i.serialize for i in catalogItems])
+
+@app.route('/catalog/JSON')
+def catalogs_json():
+    catalogs = session.query(Catalog).all()
+    return jsonify(MenuItems=[i.serialize for i in catalogs])
+@app.route('/catalog/<int:catalog_id>/item/<int:item_id>/JSON')
+def catalog_item_json(catalog_id, item_id):
+    catalogs = session.query(CatalogItem).filter_by(id=item_id)
+    catlog_item = catalogs.filter_by(catalog_id=catalog_id)
+    return jsonify(MenuItems=[i.serialize for i in catlog_item])
+
 
 
 if __name__ == '__main__':
