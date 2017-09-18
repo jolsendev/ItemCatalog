@@ -34,9 +34,12 @@ def show_catalogs():
     catalogs = session.query(Catalog)
     items = {}  # session.query(CatalogItem).filter_by(catalog_id=catalogs.id)
     if 'username' not in login_session:
-        return render_template('public_catalog_home.html', catalog_list=catalogs, catalog_items_list=items)
+        creator = {}
+        return render_template('public_catalog_home.html', catalog_list=catalogs, catalog_items_list=items,login=False)
     else:
-        return render_template("catalog_home.html", catalog_list=catalogs, catalog_items_list=items)
+        user_id = login_session["user_id"]
+        creator = session.query(User).filter_by(id=user_id)
+        return render_template("catalog_home.html", catalog_list=catalogs, catalog_items_list=items, login=True)
 
 
 # "/catalog/<int:catalog_item>/items"  show a lost of items for a catagory item
@@ -44,13 +47,14 @@ def show_catalogs():
 def show_catalog_items(catalog_id):
     catalogs = session.query(Catalog)
     catalog = session.query(Catalog).filter_by(id=catalog_id).one()
+    creator = getUserInfo(catalog.user_id)
     items = session.query(CatalogItem).filter_by(catalog_id=catalog_id)
-    if 'username' not in login_session:
+    if 'username' not in login_session or creator.id != login_session['user_id']:
         return render_template("public_catalog_home_items.html", catalog_list=catalogs, catalog=catalog,
-                               catalog_items_list=items)
+                               catalog_items_list=items, login=False)
     else:
         return render_template("catalog_home_items.html", catalog_list=catalogs, catalog=catalog,
-                               catalog_items_list=items)
+                               catalog_items_list=items, login=True)
 
 
 # "/catalog/<int:catalog_id>/<int:item_id>" - shows the description for a single item
@@ -442,10 +446,10 @@ def disconnect():
         del login_session['user_id']
         del login_session['provider']
         flash("You have successfully been logged out.")
-        return redirect(url_for('showRestaurants'))
+        return redirect(url_for('show_catalogs'))
     else:
         flash("You were not logged in")
-        return redirect(url_for('showRestaurants'))
+        return redirect(url_for('show_catalogs'))
 
 
 @app.route('/catalog/<int:catalog_id>/JSON')

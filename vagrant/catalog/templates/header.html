@@ -4,6 +4,7 @@
         <div class="col-md-4 text-left">
             <h1 class="navbar-brand col-md-6">Catalog App</h1>
         </div>
+
         <div class='flash col-md-4'>
 
             {% with messages = get_flashed_messages() %}
@@ -19,11 +20,20 @@
             {% endwith %}
 
         </div>
+
+        {%if 'username' not in session %}
         <a href="{{url_for('login')}}" method="GET">
             <div class="col-md-4 text-right">
                 <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Login</button>
             </div>
         </a>
+        {% else %}
+        <a href="{{url_for('disconnect')}}" method="GET">
+            <div class="col-md-4 text-right">
+                <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Login</button>
+            </div>
+        </a>
+        {% endif %}
 
     </div>
 </nav>
