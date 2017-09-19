@@ -13,10 +13,9 @@
             <p>{{catalog.description}}</p>
 
         </div>
-        <a href="{{url_for('create_catalog_item', catalog_id=catalog.id)}}">Create a new item</a>
         <!--ITEM_CONTAINER-->
         <div class="row">
-            {% include "catalog_items.html" %}
+            {% include "public_catalog_items.html" %}
         </div><!--/row-->
     </div><!--/span-->
 </div><!--/row-->
