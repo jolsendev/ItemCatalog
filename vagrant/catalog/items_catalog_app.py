@@ -34,11 +34,8 @@ def show_catalogs():
     catalogs = session.query(Catalog)
     items = {}  # session.query(CatalogItem).filter_by(catalog_id=catalogs.id)
     if 'username' not in login_session:
-        creator = {}
         return render_template('public_catalog_home.html', catalog_list=catalogs, catalog_items_list=items,login=False)
     else:
-        user_id = login_session["user_id"]
-        creator = session.query(User).filter_by(id=user_id)
         return render_template("catalog_home.html", catalog_list=catalogs, catalog_items_list=items, login=True)
 
 
@@ -134,7 +131,7 @@ def edit_catalog_item(catalog_id, item_id):
     items = session.query(CatalogItem).filter_by(id=item_id)
     item = items.filter_by(catalog_id=catalog_id).one()
     if login_session['user_id'] != item.user_id:
-        return "<script>function myFunction() {alert('You are not authorized to edit catalog items to this restaurant. Please create your own catalog in order to edit items.');}</script><body onload='myFunction()''>"
+        return "<script>function myFunction() {alert('You are not authorized to edit catalog items. Please create your own catalog in order to edit items.');}</script><body onload='myFunction()''>"
     if request.method == "POST":
         if request.form["name"]:
             item.name = request.form["name"]
@@ -204,14 +201,13 @@ def login():
     state = ''.join(random.choice(string.ascii_uppercase + string.digits) for x in xrange(32))
     login_session['state'] = state
     # return "The currect state is %s "%state
-    return render_template("login.html", STATE=state)
+    return render_template("login.html", STATE=state, login=None)
 
 
 # "/catalog/gconnect"
 @app.route('/gconnect', methods=['POST'])
 def gconnect():
     # Validate state token
-    print "I Got HEre!!!"
     if request.args.get('state') != login_session['state']:
         response = make_response(json.dumps('Invalid state parameter.'), 401)
         response.headers['Content-Type'] = 'application/json'
@@ -243,7 +239,7 @@ def gconnect():
         return response
 
     # Verify that the access token is used for the intended user.
-    gplus_id = credentials.id_token['sub']
+    gplus_id = credentials.id_token.get('sub', None)
     if result['user_id'] != gplus_id:
         response = make_response(
             json.dumps("Token's user ID doesn't match given user ID."), 401)
@@ -258,8 +254,8 @@ def gconnect():
         response.headers['Content-Type'] = 'application/json'
         return response
 
-    stored_access_token = login_session.get('access_token')
-    stored_gplus_id = login_session.get('gplus_id')
+    stored_access_token = login_session.get('access_token', None)
+    stored_gplus_id = login_session.get('gplus_id', None)
     if stored_access_token is not None and gplus_id == stored_gplus_id:
         response = make_response(json.dumps('Current user is already connected.'),
                                  200)
@@ -275,16 +271,19 @@ def gconnect():
     params = {'access_token': credentials.access_token, 'alt': 'json'}
     answer = requests.get(userinfo_url, params=params)
 
-    user_id = getUserID(login_session['email'])
-    if not user_id:
-        user_id = createUser(login_session)
-    login_session['user_id'] = user_id
-
     data = answer.json()
 
     login_session['username'] = data['name']
     login_session['picture'] = data['picture']
     login_session['email'] = data['email']
+    # ADD PROVIDER TO LOGIN SESSION
+    login_session['provider'] = 'google'
+
+    # see if user exists, if it doesn't make a new one
+    user_id = getUserID(data["email"])
+    if not user_id:
+        user_id = createUser(login_session)
+    login_session['user_id'] = user_id
 
     output = ''
     output += '<h1>Welcome, '
@@ -417,9 +416,6 @@ def gdisconnect():
     if result['status'] == '200':
         del login_session['access_token']
         del login_session['gplus_id']
-        del login_session['username']
-        del login_session['email']
-        del login_session['picture']
         response = make_response(json.dumps('Successfully disconnected.'), 200)
         response.headers['Content-Type'] = 'application/json'
         return response
@@ -435,8 +431,6 @@ def disconnect():
     if 'provider' in login_session:
         if login_session['provider'] == 'google':
             gdisconnect()
-            del login_session['gplus_id']
-            del login_session['credentials']
         if login_session['provider'] == 'facebook':
             fbdisconnect()
             del login_session['facebook_id']

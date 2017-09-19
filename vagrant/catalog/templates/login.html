@@ -65,13 +65,12 @@ span.psw {
     }
 }
 
-
-
-
-
-
-
-
+</style>
+<style type="text/css">
+       a:link {color: black;}      /* unvisited link */
+       a:visited {color: black;}   /* visited link */
+       a:hover {color: black;}     /* mouse over link */
+       a:active {color: black;}    /* selected link */
 
 </style>
 <form id="login_form" class="container-fluid col-md-4 col-md-offset-4" action="/action_page.php">
@@ -80,14 +79,8 @@ span.psw {
     </div>
 
     <div class="container">
-        <label><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-
-        <label><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit" class="loginButton">Login</button>
-        <p>Or sign in with Google+ or Facebook!</p>
+        <p>Login with your Facebook or Google+ account</br>(Don't worry, I will only get your username and profile
+            picture from your account!)</p>
 
         <!-- GOOGLE PLUS SIGN IN-->
 
@@ -111,8 +104,7 @@ span.psw {
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+        <button type="button" class="cancelbtn"><a href="{{url_for('show_catalogs')}}">Cancel</a></button>
     </div>
 </form>
 
@@ -153,6 +145,7 @@ function signInCallback(authResult) {
       }
 
   }); } }
+
 
 
 
@@ -218,6 +211,7 @@ function signInCallback(authResult) {
 
     });
   }
+
 
 
 

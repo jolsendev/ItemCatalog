@@ -20,10 +20,11 @@
             {% endwith %}
 
         </div>
-        <a href="{{url_for('disconnect')}}" method="GET">
+        <a href="{{url_for('login')}}" method="GET">
             <div class="col-md-4 text-right">
-                <button class="btn btn-outline-error my-2 my-sm-0 " type="submit">Logout</button>
+                <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">{{session.username}}Login</button>
             </div>
         </a>
+
     </div>
 </nav>
